@@ -351,7 +351,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                           borderRadius: BorderRadius.circular(12),
                           boxShadow: [
                             BoxShadow(
-                              color: deepGreen.withValues(alpha: 0.3 + (_buttonGlow.value * 0.3)),
+                              color: deepGreen.withOpacity(0.3 + (_buttonGlow.value * 0.3)),
                               blurRadius: 8 + (_buttonGlow.value * 8),
                               spreadRadius: _buttonGlow.value * 2,
                               offset: const Offset(0, 4),

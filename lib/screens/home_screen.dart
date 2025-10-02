@@ -1184,7 +1184,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   child: GestureDetector(
                     onTap: _togglePanel,
                     child: Container(
-                      color: Colors.black.withValues(alpha: 0.1 * _panelFade.value),
+                      color: Colors.black.withOpacity(0.1 * _panelFade.value),
                     ),
                   ),
                 ),
@@ -1201,7 +1201,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   child: GestureDetector(
                     onTap: _toggleEntriesPanel,
                     child: Container(
-                      color: Colors.black.withValues(alpha: 0.1 * _entriesPanelFade.value),
+                      color: Colors.black.withOpacity(0.1 * _entriesPanelFade.value),
                     ),
                   ),
                 ),
