@@ -33,8 +33,6 @@ Compression=lzma2/max
 SolidCompression=yes
 ; Installer UI
 WizardStyle=modern
-WizardImageFile=compiler:WizModernImage-IS.bmp
-WizardSmallImageFile=compiler:WizModernSmallImage-IS.bmp
 ; Privileges
 PrivilegesRequired=admin
 ; Architecture
