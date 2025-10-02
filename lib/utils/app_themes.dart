@@ -60,17 +60,6 @@ class AppThemes {
         actionsIconTheme: IconThemeData(color: Colors.white),
       ),
 
-      // Card Theme
-      cardTheme: CardThemeData(
-        elevation: 4,
-        color: Colors.white,
-        shadowColor: Colors.black.withOpacity(0.1),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
-        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      ),
-
       // Button Themes
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -232,17 +221,6 @@ class AppThemes {
         ),
         iconTheme: IconThemeData(color: Color(0xFFE6E1E5)),
         actionsIconTheme: IconThemeData(color: Color(0xFFE6E1E5)),
-      ),
-
-      // Card Theme
-      cardTheme: CardThemeData(
-        elevation: 4,
-        color: surfaceDark,
-        shadowColor: Colors.black.withOpacity(0.3),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
-        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       ),
 
       // Button Themes
