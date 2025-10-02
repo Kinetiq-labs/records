@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
-import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:provider/provider.dart';
 import 'providers/records_provider.dart';
 import 'providers/user_provider.dart';
@@ -50,12 +49,6 @@ void main() async {
   });
 
   runApp(const RecordsApp());
-  
-  doWhenWindowReady(() {
-    appWindow.minSize = const Size(800, 600);
-    appWindow.title = "Records - Desktop Application";
-    appWindow.show();
-  });
 }
 
 class RecordsApp extends StatelessWidget {
