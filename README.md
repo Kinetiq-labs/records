@@ -223,9 +223,6 @@ flutter run -d <platform> --verbose
 - Large datasets (1000+ records) perform well with indexed search
 - Consider pagination for extremely large datasets
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
