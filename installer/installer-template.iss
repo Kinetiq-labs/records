@@ -69,6 +69,8 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: quicklaunchicon
 
 [Run]
+; Install Visual C++ Redistributable if needed
+Filename: "https://aka.ms/vs/17/release/vc_redist.x64.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ Runtime (required)..."; Flags: skipifdoesntexist shellexec waituntilterminated; Check: VCRedistNeedsInstall
 ; Launch application after installation
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
@@ -122,4 +124,15 @@ begin
       UnInstallOldVersion();
     end;
   end;
+end;
+
+function VCRedistNeedsInstall: Boolean;
+var
+  Version: String;
+begin
+  // Check if Visual C++ 2015-2022 Redistributable is installed
+  if RegQueryStringValue(HKLM, 'SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\X64', 'Version', Version) then
+    Result := False // Already installed
+  else
+    Result := True; // Needs installation
 end;
