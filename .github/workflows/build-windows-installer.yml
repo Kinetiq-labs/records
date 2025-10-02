@@ -36,9 +36,16 @@ jobs:
       - name: Prepare Inno Setup Script
         run: |
           $version = "${{ github.ref_name }}".TrimStart('v')
-          # Copy template and replace version
+          # Determine correct build path
+          $buildPath = if (Test-Path "build\windows\x64\runner\Release") {
+            "build\windows\x64\runner\Release\*"
+          } else {
+            "build\windows\runner\Release\*"
+          }
+          # Copy template and replace version and path
           Copy-Item "installer\installer-template.iss" "installer.iss"
           (Get-Content "installer.iss") -replace '#define MyAppVersion "1.0.0"', "#define MyAppVersion `"$version`"" | Set-Content "installer.iss"
+          (Get-Content "installer.iss") -replace 'Source: "build\\windows\\runner\\Release\\\*"', "Source: `"$buildPath`"" | Set-Content "installer.iss"
 
       - name: Build Installer
         run: |
