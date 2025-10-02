@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter analyze:*)",
+      "Bash(flutter packages:*)",
+      "Bash(flutter build:*)",
+      "Bash(dart:*)",
+      "Bash(flutter run:*)",
+      "Bash(git checkout:*)",
+      "Bash(timeout:*)",
+      "Bash(nc localhost 37349)",
+      "WebSearch",
+      "Bash(flutter:*)",
+      "Bash(sqlite3:*)",
+      "Bash(find:*)",
+      "Bash(tree:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(wget:*)",
+      "Bash(unzip:*)",
+      "WebFetch(domain:fonts.google.com)",
+      "WebFetch(domain:pub.dev)",
+      "Bash(mkdir:*)",
+      "Bash(nc localhost 37737)",
+      "Bash(tar:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
