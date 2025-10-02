@@ -65,7 +65,7 @@ class _DataAnalyticsScreenState extends State<DataAnalyticsScreen> with SingleTi
           color: isDarkMode ? Colors.white : Colors.black87,
         ),
         elevation: isDarkMode ? 0 : 1,
-        shadowColor: isDarkMode ? null : Colors.black.withValues(alpha: 0.1),
+        shadowColor: isDarkMode ? null : Colors.black.withOpacity(0.1),
         bottom: TabBar(
           controller: _tabController,
           tabs: [
@@ -101,7 +101,7 @@ class _DataAnalyticsScreenState extends State<DataAnalyticsScreen> with SingleTi
           unselectedLabelColor: isDarkMode ? Colors.white70 : Colors.grey[700],
           indicatorColor: isDarkMode ? const Color(0xFF7FC685) : const Color(0xFF0B5D3B),
           indicatorWeight: 3,
-          dividerColor: isDarkMode ? Colors.white.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.3),
+          dividerColor: isDarkMode ? Colors.white.withOpacity(0.1) : Colors.grey.withOpacity(0.3),
         ),
       ),
       backgroundColor: isDarkMode ? const Color(0xFF121212) : const Color(0xFFF8F9FA),
@@ -428,11 +428,11 @@ class _DataAnalyticsScreenState extends State<DataAnalyticsScreen> with SingleTi
         color: isDarkMode ? const Color(0xFF2A2A2A) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDarkMode ? Colors.white.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.3),
+          color: isDarkMode ? Colors.white.withOpacity(0.1) : Colors.grey.withOpacity(0.3),
         ),
         boxShadow: isDarkMode ? null : [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.05),
+            color: Colors.black.withOpacity(0.05),
             offset: const Offset(0, 2),
             blurRadius: 4,
           ),
@@ -478,11 +478,11 @@ class _DataAnalyticsScreenState extends State<DataAnalyticsScreen> with SingleTi
         color: isDarkMode ? const Color(0xFF2A2A2A) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDarkMode ? Colors.white.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.3),
+          color: isDarkMode ? Colors.white.withOpacity(0.1) : Colors.grey.withOpacity(0.3),
         ),
         boxShadow: isDarkMode ? null : [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.05),
+            color: Colors.black.withOpacity(0.05),
             offset: const Offset(0, 2),
             blurRadius: 4,
           ),
@@ -503,11 +503,11 @@ class _DataAnalyticsScreenState extends State<DataAnalyticsScreen> with SingleTi
         color: isDarkMode ? const Color(0xFF2A2A2A) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDarkMode ? Colors.white.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.3),
+          color: isDarkMode ? Colors.white.withOpacity(0.1) : Colors.grey.withOpacity(0.3),
         ),
         boxShadow: isDarkMode ? null : [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.05),
+            color: Colors.black.withOpacity(0.05),
             offset: const Offset(0, 2),
             blurRadius: 4,
           ),
@@ -557,7 +557,7 @@ class _DataAnalyticsScreenState extends State<DataAnalyticsScreen> with SingleTi
                   Expanded(
                     child: LinearProgressIndicator(
                       value: percentage,
-                      backgroundColor: isDarkMode ? Colors.white.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.2),
+                      backgroundColor: isDarkMode ? Colors.white.withOpacity(0.1) : Colors.grey.withOpacity(0.2),
                       valueColor: AlwaysStoppedAnimation<Color>(
                         isDarkMode ? const Color(0xFF7FC685) : const Color(0xFF0B5D3B),
                       ),

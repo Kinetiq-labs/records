@@ -158,7 +158,7 @@ class _SilverConsumptionChartState extends State<SilverConsumptionChart> {
         color: isDarkMode ? const Color(0xFF2A2A2A) : const Color(0xFFF5F5F5),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: const Color(0xFF4CAF50).withValues(alpha: 0.3),
+          color: const Color(0xFF4CAF50).withOpacity(0.3),
         ),
       ),
       child: Column(
@@ -275,7 +275,7 @@ class _SilverConsumptionChartState extends State<SilverConsumptionChart> {
         horizontalInterval: (range + 2 * padding) > 0 ? (range + 2 * padding) / 5 : 20.0, // Default to 20 if still zero
         getDrawingHorizontalLine: (value) {
           return FlLine(
-            color: isDarkMode ? Colors.white.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.3),
+            color: isDarkMode ? Colors.white.withOpacity(0.1) : Colors.grey.withOpacity(0.3),
             strokeWidth: 1,
           );
         },
@@ -332,7 +332,7 @@ class _SilverConsumptionChartState extends State<SilverConsumptionChart> {
       borderData: FlBorderData(
         show: true,
         border: Border.all(
-          color: isDarkMode ? Colors.white.withValues(alpha: 0.2) : Colors.grey.withValues(alpha: 0.3),
+          color: isDarkMode ? Colors.white.withOpacity(0.2) : Colors.grey.withOpacity(0.3),
         ),
       ),
       minX: 0,
@@ -426,7 +426,7 @@ class _SilverConsumptionChartState extends State<SilverConsumptionChart> {
       ),
       belowBarData: BarAreaData(
         show: type == 'remaining_silver',
-        color: color.withValues(alpha: 0.1),
+        color: color.withOpacity(0.1),
       ),
     );
   }

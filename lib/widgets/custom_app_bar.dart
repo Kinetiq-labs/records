@@ -29,7 +29,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: backgroundColor ?? Theme.of(context).colorScheme.surface,
       foregroundColor: Theme.of(context).colorScheme.onSurface,
       elevation: 2,
-      shadowColor: Theme.of(context).colorScheme.shadow.withValues(alpha: 0.1),
+      shadowColor: Theme.of(context).colorScheme.shadow.withOpacity(0.1),
       leading: leading,
       actions: actions,
       shape: const RoundedRectangleBorder(

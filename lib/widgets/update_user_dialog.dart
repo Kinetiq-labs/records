@@ -158,7 +158,7 @@ class _UpdateUserDialogState extends State<UpdateUserDialog> {
         fontWeight: FontWeight.w500,
       ),
       hintStyle: TextStyle(
-        color: deepGreen.withValues(alpha: 0.6),
+        color: deepGreen.withOpacity(0.6),
         fontSize: 14,
       ),
       prefixIcon: Icon(icon, color: deepGreen, size: 22),
@@ -209,7 +209,7 @@ class _UpdateUserDialogState extends State<UpdateUserDialog> {
           Text(
             widget.user.fullName,
             style: TextStyle(
-              color: deepGreen.withValues(alpha: 0.7),
+              color: deepGreen.withOpacity(0.7),
               fontWeight: FontWeight.w500,
               fontSize: 16,
             ),
@@ -417,12 +417,12 @@ class _UpdateUserDialogState extends State<UpdateUserDialog> {
                               padding: const EdgeInsets.all(12),
                               decoration: BoxDecoration(
                                 color: _selectedRole == role 
-                                    ? deepGreen.withValues(alpha: 0.1) 
+                                    ? deepGreen.withOpacity(0.1) 
                                     : Colors.transparent,
                                 border: Border.all(
                                   color: _selectedRole == role 
                                       ? deepGreen 
-                                      : borderGreen.withValues(alpha: 0.3),
+                                      : borderGreen.withOpacity(0.3),
                                   width: _selectedRole == role ? 2 : 1,
                                 ),
                                 borderRadius: BorderRadius.circular(8),
@@ -460,7 +460,7 @@ class _UpdateUserDialogState extends State<UpdateUserDialog> {
                                           style: TextStyle(
                                             fontSize: 13,
                                             color: _selectedRole == role 
-                                                ? deepGreen.withValues(alpha: 0.8) 
+                                                ? deepGreen.withOpacity(0.8) 
                                                 : Colors.grey[600],
                                             height: 1.3,
                                           ),

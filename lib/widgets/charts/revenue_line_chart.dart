@@ -107,7 +107,7 @@ class _RevenueLineChartState extends State<RevenueLineChart> {
         color: isDarkMode ? const Color(0xFF2A2A2A) : const Color(0xFFF5F5F5),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: const Color(0xFF4CAF50).withValues(alpha: 0.3),
+          color: const Color(0xFF4CAF50).withOpacity(0.3),
         ),
       ),
       child: Row(
@@ -162,7 +162,7 @@ class _RevenueLineChartState extends State<RevenueLineChart> {
         horizontalInterval: horizontalInterval,
         getDrawingHorizontalLine: (value) {
           return FlLine(
-            color: isDarkMode ? Colors.white.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.3),
+            color: isDarkMode ? Colors.white.withOpacity(0.1) : Colors.grey.withOpacity(0.3),
             strokeWidth: 1,
           );
         },
@@ -219,7 +219,7 @@ class _RevenueLineChartState extends State<RevenueLineChart> {
       borderData: FlBorderData(
         show: true,
         border: Border.all(
-          color: isDarkMode ? Colors.white.withValues(alpha: 0.2) : Colors.grey.withValues(alpha: 0.3),
+          color: isDarkMode ? Colors.white.withOpacity(0.2) : Colors.grey.withOpacity(0.3),
         ),
       ),
       minX: 0,
@@ -257,8 +257,8 @@ class _RevenueLineChartState extends State<RevenueLineChart> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                const Color(0xFF4CAF50).withValues(alpha: 0.3),
-                const Color(0xFF4CAF50).withValues(alpha: 0.1),
+                const Color(0xFF4CAF50).withOpacity(0.3),
+                const Color(0xFF4CAF50).withOpacity(0.1),
               ],
             ),
           ),

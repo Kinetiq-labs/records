@@ -118,7 +118,7 @@ class _AddUserDialogState extends State<AddUserDialog> {
       labelText: label,
       hintText: hint,
       labelStyle: const TextStyle(color: deepGreen),
-      hintStyle: TextStyle(color: deepGreen.withValues(alpha: 0.6)),
+      hintStyle: TextStyle(color: deepGreen.withOpacity(0.6)),
       prefixIcon: Icon(icon, color: deepGreen),
       filled: true,
       fillColor: lightGreenFill,

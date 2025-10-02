@@ -120,7 +120,7 @@ class _SearchPopupState extends State<SearchPopup> with SingleTickerProviderStat
     return GestureDetector(
       onTap: () => Navigator.of(context).pop(),
       child: Container(
-        color: Colors.black.withValues(alpha: 0.5),
+        color: Colors.black.withOpacity(0.5),
         child: Center(
           child: GestureDetector(
             onTap: () {}, // Prevent closing when tapping inside
@@ -144,7 +144,7 @@ class _SearchPopupState extends State<SearchPopup> with SingleTickerProviderStat
                           borderRadius: BorderRadius.circular(16),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withValues(alpha: 0.2),
+                              color: Colors.black.withOpacity(0.2),
                               offset: const Offset(0, 8),
                               blurRadius: 24,
                             ),

@@ -136,7 +136,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
         borderRadius: BorderRadius.circular(12),
         borderSide: const BorderSide(color: Color(0xFF2E7D32), width: 1.6),
       ),
-      hintStyle: TextStyle(color: deepGreen.withValues(alpha: 0.7)),
+      hintStyle: TextStyle(color: deepGreen.withOpacity(0.7)),
     );
   }
 
@@ -168,7 +168,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
               width: 230,
               height: 230,
               decoration: BoxDecoration(
-                color: deepGreen.withValues(alpha: 0.9),
+                color: deepGreen.withOpacity(0.9),
                 shape: BoxShape.circle,
               ),
             ),
@@ -181,7 +181,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
               width: 120,
               height: 120,
               decoration: BoxDecoration(
-                color: deepGreen.withValues(alpha: 0.85),
+                color: deepGreen.withOpacity(0.85),
                 shape: BoxShape.circle,
               ),
             ),
@@ -194,7 +194,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
               width: 320,
               height: 320,
               decoration: BoxDecoration(
-                color: deepGreen.withValues(alpha: 0.8),
+                color: deepGreen.withOpacity(0.8),
                 shape: BoxShape.circle,
               ),
             ),
@@ -207,7 +207,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
               width: 270,
               height: 270,
               decoration: BoxDecoration(
-                color: deepGreen.withValues(alpha: 0.88),
+                color: deepGreen.withOpacity(0.88),
                 shape: BoxShape.circle,
               ),
             ),
@@ -220,7 +220,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
               width: 95,
               height: 95,
               decoration: BoxDecoration(
-                color: deepGreen.withValues(alpha: 0.95),
+                color: deepGreen.withOpacity(0.95),
                 shape: BoxShape.circle,
               ),
             ),
@@ -275,12 +275,12 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: lightGreenFill.withValues(alpha: 0.7),
+        color: lightGreenFill.withOpacity(0.7),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: borderGreen.withValues(alpha: 0.6), width: 1.2),
+        border: Border.all(color: borderGreen.withOpacity(0.6), width: 1.2),
         boxShadow: [
           BoxShadow(
-            color: deepGreen.withValues(alpha: 0.08),
+            color: deepGreen.withOpacity(0.08),
             blurRadius: 18,
             offset: const Offset(0, 8),
           ),

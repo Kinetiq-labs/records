@@ -149,7 +149,7 @@ class _MonthlyEntriesScreenState extends State<MonthlyEntriesScreen> {
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF0B5D3B).withValues(alpha: 0.3),
+                  color: const Color(0xFF0B5D3B).withOpacity(0.3),
                   offset: const Offset(0, 4),
                   blurRadius: 12,
                 ),
@@ -220,10 +220,10 @@ class _MonthlyEntriesScreenState extends State<MonthlyEntriesScreen> {
               decoration: BoxDecoration(
                 color: isDarkMode ? const Color(0xFF1E1E1E) : Colors.white,
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3), width: 2),
+                border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3), width: 2),
                 boxShadow: [
                   BoxShadow(
-                    color: isDarkMode ? Colors.black.withValues(alpha: 0.3) : Colors.black.withValues(alpha: 0.05),
+                    color: isDarkMode ? Colors.black.withOpacity(0.3) : Colors.black.withOpacity(0.05),
                     offset: const Offset(0, 2),
                     blurRadius: 8,
                   ),
@@ -262,7 +262,7 @@ class _MonthlyEntriesScreenState extends State<MonthlyEntriesScreen> {
                             Container(
                               padding: ResponsiveUtils.getResponsivePadding(context),
                               decoration: BoxDecoration(
-                                color: lightGreenFill.withValues(alpha: 0.5),
+                                color: lightGreenFill.withOpacity(0.5),
                                 borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(14),
                                   topRight: Radius.circular(14),
@@ -334,10 +334,10 @@ class _MonthlyEntriesScreenState extends State<MonthlyEntriesScreen> {
                                                   width: 40,
                                                   height: 40,
                                                   decoration: BoxDecoration(
-                                                    color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withValues(alpha: 0.1),
+                                                    color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withOpacity(0.1),
                                                     borderRadius: BorderRadius.circular(8),
                                                     border: Border.all(
-                                                      color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withValues(alpha: 0.3),
+                                                      color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withOpacity(0.3),
                                                     ),
                                                   ),
                                                   child: Center(
@@ -378,7 +378,7 @@ class _MonthlyEntriesScreenState extends State<MonthlyEntriesScreen> {
                                             child: Container(
                                               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                               decoration: BoxDecoration(
-                                                color: deepGreen.withValues(alpha: 0.1),
+                                                color: deepGreen.withOpacity(0.1),
                                                 borderRadius: BorderRadius.circular(8),
                                               ),
                                               child: Text(
@@ -409,9 +409,9 @@ class _MonthlyEntriesScreenState extends State<MonthlyEntriesScreen> {
             margin: ResponsiveUtils.getResponsiveMargin(context),
             padding: ResponsiveUtils.getResponsivePadding(context),
             decoration: BoxDecoration(
-              color: lightGreenFill.withValues(alpha: 0.3),
+              color: lightGreenFill.withOpacity(0.3),
               borderRadius: BorderRadius.circular(8),
-              border: Border.all(color: borderGreen.withValues(alpha: 0.3)),
+              border: Border.all(color: borderGreen.withOpacity(0.3)),
             ),
             child: Row(
               textDirection: currentLang == 'ur' ? TextDirection.rtl : TextDirection.ltr,

@@ -125,7 +125,7 @@ class _PaymentStatusPieChartState extends State<PaymentStatusPieChart> {
                   color: color,
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: isDarkMode ? Colors.white.withValues(alpha: 0.3) : Colors.grey.withValues(alpha: 0.3),
+                    color: isDarkMode ? Colors.white.withOpacity(0.3) : Colors.grey.withOpacity(0.3),
                     width: 1,
                   ),
                 ),
@@ -171,7 +171,7 @@ class _PaymentStatusPieChartState extends State<PaymentStatusPieChart> {
         color: isDarkMode ? const Color(0xFF2A2A2A) : const Color(0xFFF5F5F5),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: _getStatusColor(data.status).withValues(alpha: 0.3),
+          color: _getStatusColor(data.status).withOpacity(0.3),
         ),
       ),
       child: Row(

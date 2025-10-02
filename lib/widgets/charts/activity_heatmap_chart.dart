@@ -252,7 +252,7 @@ class _ActivityHeatmapChartState extends State<ActivityHeatmapChart> {
         color: isDarkMode ? const Color(0xFF2A2A2A) : const Color(0xFFF5F5F5),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: const Color(0xFF4CAF50).withValues(alpha: 0.3),
+          color: const Color(0xFF4CAF50).withOpacity(0.3),
         ),
       ),
       child: Row(

@@ -388,7 +388,7 @@ class _AdminDashboardState extends State<AdminDashboard> with TickerProviderStat
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
                 side: BorderSide(
-                  color: user.isActive ? borderGreen.withValues(alpha: 0.3) : Colors.red.withValues(alpha: 0.3),
+                  color: user.isActive ? borderGreen.withOpacity(0.3) : Colors.red.withOpacity(0.3),
                   width: 1,
                 ),
               ),
@@ -462,7 +462,7 @@ class _AdminDashboardState extends State<AdminDashboard> with TickerProviderStat
                             baseFontSize: 12,
                           ),
                           backgroundColor: user.isAdmin 
-                              ? deepGreen.withValues(alpha: 0.1)
+                              ? deepGreen.withOpacity(0.1)
                               : lightGreenFill,
                           side: BorderSide(
                             color: user.isAdmin ? deepGreen : borderGreen,
@@ -477,9 +477,9 @@ class _AdminDashboardState extends State<AdminDashboard> with TickerProviderStat
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(
-                      color: Colors.red.withValues(alpha: 0.1),
+                      color: Colors.red.withOpacity(0.1),
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Colors.red.withValues(alpha: 0.3)),
+                      border: Border.all(color: Colors.red.withOpacity(0.3)),
                     ),
                     child: const Text(
                       'INACTIVE',

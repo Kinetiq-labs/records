@@ -154,7 +154,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         decoration: BoxDecoration(
           color: isDarkMode ? const Color(0xFF1A3325) : lightGreenFill,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3)),
+          border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3)),
         ),
         child: Column(
           children: [

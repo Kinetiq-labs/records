@@ -94,7 +94,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
       backgroundColor: widget.backgroundColor ?? (isDarkMode ? const Color(0xFF1E1E1E) : background),
       foregroundColor: isDarkMode ? const Color(0xFFE6E1E5) : deepGreen,
       elevation: 4,
-      shadowColor: deepGreen.withValues(alpha: 0.2),
+      shadowColor: deepGreen.withOpacity(0.2),
       automaticallyImplyLeading: false,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -105,7 +105,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
             Container(
               margin: const EdgeInsets.only(right: 8),
               decoration: BoxDecoration(
-                color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withValues(alpha: 0.1),
+                color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withOpacity(0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: IconButton(
@@ -134,7 +134,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
               ),
               color: isDarkMode ? const Color(0xFF2D2D2D) : deepGreen,
               elevation: 8,
-              shadowColor: deepGreen.withValues(alpha: 0.3),
+              shadowColor: deepGreen.withOpacity(0.3),
               onSelected: (String value) async {
                 // Handle menu selection
                 switch (value) {
@@ -290,7 +290,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
                 decoration: BoxDecoration(
                   color: isDarkMode ? const Color(0xFF1A3325) : lightGreenFill,
                   borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3)),
+                  border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3)),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -318,7 +318,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
                     const SizedBox(width: 4),
                     Icon(
                       Icons.keyboard_arrow_down,
-                      color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withValues(alpha: 0.7),
+                      color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withOpacity(0.7),
                       size: 16,
                     ),
                   ],
@@ -339,7 +339,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
-                    color: (isDarkMode ? const Color(0xFF2D2D2D) : deepGreen).withValues(alpha: 0.3),
+                    color: (isDarkMode ? const Color(0xFF2D2D2D) : deepGreen).withOpacity(0.3),
                     offset: const Offset(0, 2),
                     blurRadius: 4,
                   ),
@@ -352,7 +352,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
                     Translations.get('current_time', currentLang),
                     style: BilingualTextStyles.labelMedium(
                       Translations.get('current_time', currentLang),
-                      color: Colors.white.withValues(alpha: 0.8),
+                      color: Colors.white.withOpacity(0.8),
                     ),
                   ),
                   Text(
@@ -378,7 +378,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
               decoration: BoxDecoration(
                 color: isDarkMode ? const Color(0xFF1A3325) : lightGreenFill,
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3)),
+                border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3)),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -388,7 +388,7 @@ class _DashboardAppBarState extends State<DashboardAppBar> {
                     Translations.get('today', currentLang),
                     style: BilingualTextStyles.labelMedium(
                       Translations.get('today', currentLang),
-                      color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withValues(alpha: 0.7),
+                      color: (isDarkMode ? const Color(0xFF7FC685) : deepGreen).withOpacity(0.7),
                     ),
                   ),
                   BilingualText.bilingual(

@@ -61,10 +61,10 @@ class AppThemes {
       ),
 
       // Card Theme
-      cardTheme: CardThemeData(
+      cardTheme: CardTheme(
         elevation: 4,
         color: Colors.white,
-        shadowColor: Colors.black.withValues(alpha: 0.1),
+        shadowColor: Colors.black.withOpacity(0.1),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
@@ -120,11 +120,11 @@ class AppThemes {
       inputDecorationTheme: InputDecorationTheme(
         border: OutlineInputBorder(
           borderRadius: const BorderRadius.all(Radius.circular(8)),
-          borderSide: BorderSide(color: borderGreen.withValues(alpha: 0.3)),
+          borderSide: BorderSide(color: borderGreen.withOpacity(0.3)),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: const BorderRadius.all(Radius.circular(8)),
-          borderSide: BorderSide(color: borderGreen.withValues(alpha: 0.3)),
+          borderSide: BorderSide(color: borderGreen.withOpacity(0.3)),
         ),
         focusedBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(8)),
@@ -149,7 +149,7 @@ class AppThemes {
         hintStyle: TextStyle(
           fontSize: 14,
           letterSpacing: 0.1,
-          color: deepGreen.withValues(alpha: 0.6),
+          color: deepGreen.withOpacity(0.6),
         ),
       ),
 
@@ -162,7 +162,7 @@ class AppThemes {
 
       // Divider Theme
       dividerTheme: DividerThemeData(
-        color: Colors.grey.withValues(alpha: 0.2),
+        color: Colors.grey.withOpacity(0.2),
         thickness: 1,
         space: 1,
       ),
@@ -235,10 +235,10 @@ class AppThemes {
       ),
 
       // Card Theme
-      cardTheme: CardThemeData(
+      cardTheme: CardTheme(
         elevation: 4,
         color: surfaceDark,
-        shadowColor: Colors.black.withValues(alpha: 0.3),
+        shadowColor: Colors.black.withOpacity(0.3),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
@@ -294,11 +294,11 @@ class AppThemes {
       inputDecorationTheme: InputDecorationTheme(
         border: OutlineInputBorder(
           borderRadius: const BorderRadius.all(Radius.circular(8)),
-          borderSide: BorderSide(color: borderGreenDark.withValues(alpha: 0.3)),
+          borderSide: BorderSide(color: borderGreenDark.withOpacity(0.3)),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: const BorderRadius.all(Radius.circular(8)),
-          borderSide: BorderSide(color: borderGreenDark.withValues(alpha: 0.3)),
+          borderSide: BorderSide(color: borderGreenDark.withOpacity(0.3)),
         ),
         focusedBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(8)),
@@ -323,7 +323,7 @@ class AppThemes {
         hintStyle: TextStyle(
           fontSize: 14,
           letterSpacing: 0.1,
-          color: const Color(0xFF7FC685).withValues(alpha: 0.6),
+          color: const Color(0xFF7FC685).withOpacity(0.6),
         ),
       ),
 
@@ -336,7 +336,7 @@ class AppThemes {
 
       // Divider Theme
       dividerTheme: DividerThemeData(
-        color: Colors.grey.withValues(alpha: 0.3),
+        color: Colors.grey.withOpacity(0.3),
         thickness: 1,
         space: 1,
       ),

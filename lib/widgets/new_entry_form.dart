@@ -331,18 +331,18 @@ class _NewEntryFormState extends State<NewEntryForm> {
                   hintText: '${Translations.get('enter', currentLang)} ${Translations.get(label, currentLang)}',
                   hintStyle: BilingualTextStyles.getTextStyle(
                     text: '${Translations.get('enter', currentLang)} ${Translations.get(label, currentLang)}',
-                    color: isDarkMode ? const Color(0xFF8A8A8A) : deepGreen.withValues(alpha: 0.5),
+                    color: isDarkMode ? const Color(0xFF8A8A8A) : deepGreen.withOpacity(0.5),
                     fontSize: 14,
                   ),
                   filled: true,
                   fillColor: isDarkMode ? const Color(0xFF2A2A2A) : lightGreenFill,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3)),
+                    borderSide: BorderSide(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3)),
+                    borderSide: BorderSide(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -387,10 +387,10 @@ class _NewEntryFormState extends State<NewEntryForm> {
         decoration: BoxDecoration(
           color: isDarkMode ? const Color(0xFF1E1E1E) : background,
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3), width: 2),
+          border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3), width: 2),
           boxShadow: [
             BoxShadow(
-              color: deepGreen.withValues(alpha: 0.2),
+              color: deepGreen.withOpacity(0.2),
               offset: const Offset(0, 10),
               blurRadius: 30,
               spreadRadius: 2,
@@ -410,7 +410,7 @@ class _NewEntryFormState extends State<NewEntryForm> {
                   end: Alignment.bottomRight,
                   colors: isDarkMode
                     ? [const Color(0xFF2D2D2D), const Color(0xFF4A4A4A)]
-                    : [deepGreen, deepGreen.withValues(alpha: 0.8)],
+                    : [deepGreen, deepGreen.withOpacity(0.8)],
                 ),
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(18),
@@ -478,9 +478,9 @@ class _NewEntryFormState extends State<NewEntryForm> {
                         padding: const EdgeInsets.all(12),
                         margin: const EdgeInsets.only(bottom: 20),
                         decoration: BoxDecoration(
-                          color: Colors.blue.withValues(alpha: 0.1),
+                          color: Colors.blue.withOpacity(0.1),
                           borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: Colors.blue.withValues(alpha: 0.3)),
+                          border: Border.all(color: Colors.blue.withOpacity(0.3)),
                         ),
                         child: Row(
                           textDirection: currentLang == 'ur' ? TextDirection.rtl : TextDirection.ltr,
@@ -671,7 +671,7 @@ class _NewEntryFormState extends State<NewEntryForm> {
                               borderRadius: BorderRadius.circular(12),
                             ),
                             elevation: 4,
-                            shadowColor: deepGreen.withValues(alpha: 0.3),
+                            shadowColor: deepGreen.withOpacity(0.3),
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,

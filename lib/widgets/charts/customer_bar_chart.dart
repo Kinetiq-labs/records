@@ -108,7 +108,7 @@ class _CustomerBarChartState extends State<CustomerBarChart> {
         color: isDarkMode ? const Color(0xFF2A2A2A) : const Color(0xFFF5F5F5),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: const Color(0xFF2196F3).withValues(alpha: 0.3),
+          color: const Color(0xFF2196F3).withOpacity(0.3),
         ),
       ),
       child: Column(
@@ -291,7 +291,7 @@ class _CustomerBarChartState extends State<CustomerBarChart> {
       borderData: FlBorderData(
         show: true,
         border: Border.all(
-          color: isDarkMode ? Colors.white.withValues(alpha: 0.2) : Colors.grey.withValues(alpha: 0.3),
+          color: isDarkMode ? Colors.white.withOpacity(0.2) : Colors.grey.withOpacity(0.3),
         ),
       ),
       barGroups: widget.data.asMap().entries.map((entry) {
@@ -321,7 +321,7 @@ class _CustomerBarChartState extends State<CustomerBarChart> {
         horizontalInterval: (effectiveMaxY + padding) / 5,
         getDrawingHorizontalLine: (value) {
           return FlLine(
-            color: isDarkMode ? Colors.white.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.3),
+            color: isDarkMode ? Colors.white.withOpacity(0.1) : Colors.grey.withOpacity(0.3),
             strokeWidth: 1,
           );
         },
@@ -344,6 +344,6 @@ class _CustomerBarChartState extends State<CustomerBarChart> {
     ];
 
     final baseColor = colors[index % colors.length];
-    return isTouched ? baseColor : baseColor.withValues(alpha: 0.8);
+    return isTouched ? baseColor : baseColor.withOpacity(0.8);
   }
 }

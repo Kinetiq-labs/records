@@ -31,8 +31,8 @@ jobs:
 
       - name: Create Windows ZIP
         run: |
-          cd build/windows/x64/runner/Release
-          Compress-Archive -Path * -DestinationPath ../../../../../records-${{ github.ref_name }}-windows.zip
+          cd build/windows/runner/Release
+          Compress-Archive -Path * -DestinationPath ../../../../records-${{ github.ref_name }}-windows.zip
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v1

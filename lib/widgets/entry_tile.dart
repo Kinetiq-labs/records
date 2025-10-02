@@ -89,8 +89,8 @@ class EntryTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         side: BorderSide(
           color: isDarkMode
-            ? Colors.white.withValues(alpha: 0.1)
-            : Colors.grey.withValues(alpha: 0.2),
+            ? Colors.white.withOpacity(0.1)
+            : Colors.grey.withOpacity(0.2),
         ),
       ),
       color: isDarkMode ? const Color(0xFF3D3D3D) : Colors.white,
@@ -110,7 +110,7 @@ class EntryTile extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(
-                      color: isDarkMode ? const Color(0xFF0B5D3B) : const Color(0xFF0B5D3B).withValues(alpha: 0.1),
+                      color: isDarkMode ? const Color(0xFF0B5D3B) : const Color(0xFF0B5D3B).withOpacity(0.1),
                       borderRadius: BorderRadius.circular(6),
                     ),
                     child: Text(

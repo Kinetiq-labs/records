@@ -336,18 +336,18 @@ class _EditEntryFormState extends State<EditEntryForm> {
                   hintText: '${Translations.get('enter', currentLang)} ${Translations.get(label, currentLang)}',
                   hintStyle: BilingualTextStyles.getTextStyle(
                     text: '${Translations.get('enter', currentLang)} ${Translations.get(label, currentLang)}',
-                    color: isDarkMode ? const Color(0xFF8A8A8A) : deepGreen.withValues(alpha: 0.5),
+                    color: isDarkMode ? const Color(0xFF8A8A8A) : deepGreen.withOpacity(0.5),
                     fontSize: 14,
                   ),
                   filled: true,
                   fillColor: isDarkMode ? const Color(0xFF2A2A2A) : lightGreenFill,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3)),
+                    borderSide: BorderSide(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3)),
+                    borderSide: BorderSide(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -392,10 +392,10 @@ class _EditEntryFormState extends State<EditEntryForm> {
         decoration: BoxDecoration(
           color: isDarkMode ? const Color(0xFF1E1E1E) : background,
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3), width: 2),
+          border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3), width: 2),
           boxShadow: [
             BoxShadow(
-              color: deepGreen.withValues(alpha: 0.2),
+              color: deepGreen.withOpacity(0.2),
               offset: const Offset(0, 10),
               blurRadius: 30,
               spreadRadius: 2,
@@ -415,7 +415,7 @@ class _EditEntryFormState extends State<EditEntryForm> {
                   end: Alignment.bottomRight,
                   colors: isDarkMode
                     ? [const Color(0xFF2D2D2D), const Color(0xFF4A4A4A)]
-                    : [deepGreen, deepGreen.withValues(alpha: 0.8)],
+                    : [deepGreen, deepGreen.withOpacity(0.8)],
                 ),
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(18),
@@ -652,7 +652,7 @@ class _EditEntryFormState extends State<EditEntryForm> {
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                                 elevation: 4,
-                                shadowColor: deepGreen.withValues(alpha: 0.3),
+                                shadowColor: deepGreen.withOpacity(0.3),
                                 padding: const EdgeInsets.symmetric(vertical: 12),
                               ),
                               child: Row(

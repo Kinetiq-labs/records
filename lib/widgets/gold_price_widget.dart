@@ -196,12 +196,12 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: lightGoldFill.withValues(alpha: 0.8),
+        color: lightGoldFill.withOpacity(0.8),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: borderGold.withValues(alpha: 0.5), width: 1),
+        border: Border.all(color: borderGold.withOpacity(0.5), width: 1),
         boxShadow: [
           BoxShadow(
-            color: deepGold.withValues(alpha: 0.1),
+            color: deepGold.withOpacity(0.1),
             offset: const Offset(0, 2),
             blurRadius: 8,
           ),
@@ -249,7 +249,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
           border: Border.all(color: const Color(0xFFE57373), width: 1),
           boxShadow: [
             BoxShadow(
-              color: Colors.red.withValues(alpha: 0.1),
+              color: Colors.red.withOpacity(0.1),
               offset: const Offset(0, 2),
               blurRadius: 8,
             ),
@@ -307,20 +307,20 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
                   colors: [
                     lightGoldFill,
                     background,
-                    lightGoldFill.withValues(alpha: 0.8),
+                    lightGoldFill.withOpacity(0.8),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: borderGold.withValues(alpha: 0.6), width: 1.5),
+                border: Border.all(color: borderGold.withOpacity(0.6), width: 1.5),
                 boxShadow: [
                   BoxShadow(
-                    color: deepGold.withValues(alpha: 0.15),
+                    color: deepGold.withOpacity(0.15),
                     offset: const Offset(0, 4),
                     blurRadius: 12,
                     spreadRadius: 1,
                   ),
                   BoxShadow(
-                    color: Colors.white.withValues(alpha: 0.7),
+                    color: Colors.white.withOpacity(0.7),
                     offset: const Offset(0, -2),
                     blurRadius: 6,
                   ),
@@ -354,7 +354,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
                 borderRadius: BorderRadius.circular(6),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFFFFD700).withValues(alpha: 0.3),
+                    color: const Color(0xFFFFD700).withOpacity(0.3),
                     offset: const Offset(0, 2),
                     blurRadius: 3,
                   ),
@@ -415,7 +415,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
               Text(
                 '/gram',
                 style: TextStyle(
-                  color: deepGold.withValues(alpha: 0.8),
+                  color: deepGold.withOpacity(0.8),
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
                 ),
@@ -433,10 +433,10 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                   decoration: BoxDecoration(
-                    color: _getChangeColor(_currentData!.change).withValues(alpha: 0.1),
+                    color: _getChangeColor(_currentData!.change).withOpacity(0.1),
                     borderRadius: BorderRadius.circular(4),
                     border: Border.all(
-                      color: _getChangeColor(_currentData!.change).withValues(alpha: 0.3),
+                      color: _getChangeColor(_currentData!.change).withOpacity(0.3),
                       width: 1,
                     ),
                   ),
@@ -473,7 +473,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
                     borderRadius: BorderRadius.circular(6),
                     boxShadow: [
                       BoxShadow(
-                        color: deepGold.withValues(alpha: 0.3),
+                        color: deepGold.withOpacity(0.3),
                         offset: const Offset(0, 2),
                         blurRadius: 3,
                       ),
@@ -509,7 +509,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
           Text(
             'Updated ${_formatLastUpdated(_currentData!.lastUpdated)}',
             style: TextStyle(
-              color: deepGold.withValues(alpha: 0.5),
+              color: deepGold.withOpacity(0.5),
               fontSize: 8,
               fontWeight: FontWeight.w500,
               fontStyle: FontStyle.italic,
@@ -536,7 +536,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFFFFD700).withValues(alpha: 0.3),
+                    color: const Color(0xFFFFD700).withOpacity(0.3),
                     offset: const Offset(0, 2),
                     blurRadius: 4,
                   ),
@@ -567,7 +567,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
                   Text(
                     _currentData!.country,
                     style: TextStyle(
-                      color: deepGold.withValues(alpha: 0.7),
+                      color: deepGold.withOpacity(0.7),
                       fontSize: 10,
                       fontWeight: FontWeight.w500,
                     ),
@@ -588,7 +588,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
             else
               Icon(
                 Icons.refresh,
-                color: deepGold.withValues(alpha: 0.6),
+                color: deepGold.withOpacity(0.6),
                 size: 14,
               ),
           ],
@@ -614,7 +614,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
             Text(
               '/oz',
               style: TextStyle(
-                color: deepGold.withValues(alpha: 0.6),
+                color: deepGold.withOpacity(0.6),
                 fontSize: 11,
                 fontWeight: FontWeight.w500,
               ),
@@ -626,10 +626,10 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
-                color: _getChangeColor(_currentData!.change).withValues(alpha: 0.1),
+                color: _getChangeColor(_currentData!.change).withOpacity(0.1),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                  color: _getChangeColor(_currentData!.change).withValues(alpha: 0.3),
+                  color: _getChangeColor(_currentData!.change).withOpacity(0.3),
                   width: 1,
                 ),
               ),
@@ -671,7 +671,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
         Text(
           'Updated ${_formatLastUpdated(_currentData!.lastUpdated)}',
           style: TextStyle(
-            color: deepGold.withValues(alpha: 0.5),
+            color: deepGold.withOpacity(0.5),
             fontSize: 9,
             fontWeight: FontWeight.w500,
             fontStyle: FontStyle.italic,
@@ -703,14 +703,14 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
             colors: [
               lightGoldFill,
               background,
-              lightGoldFill.withValues(alpha: 0.9),
+              lightGoldFill.withOpacity(0.9),
             ],
           ),
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: borderGold.withValues(alpha: 0.6), width: 2),
+          border: Border.all(color: borderGold.withOpacity(0.6), width: 2),
           boxShadow: [
             BoxShadow(
-              color: deepGold.withValues(alpha: 0.2),
+              color: deepGold.withOpacity(0.2),
               offset: const Offset(0, 10),
               blurRadius: 30,
               spreadRadius: 2,
@@ -728,7 +728,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [deepGold, deepGold.withValues(alpha: 0.8)],
+                  colors: [deepGold, deepGold.withOpacity(0.8)],
                 ),
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(18),
@@ -828,7 +828,7 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
                         Text(
                           'Last Updated: ${_formatLastUpdated(rates.lastUpdated)}',
                           style: TextStyle(
-                            color: deepGold.withValues(alpha: 0.7),
+                            color: deepGold.withOpacity(0.7),
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
@@ -851,15 +851,15 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
       width: double.infinity,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: bgColor.withValues(alpha: 0.8),
+        color: bgColor.withOpacity(0.8),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: accentColor.withValues(alpha: 0.4),
+          color: accentColor.withOpacity(0.4),
           width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
-            color: accentColor.withValues(alpha: 0.1),
+            color: accentColor.withOpacity(0.1),
             offset: const Offset(0, 4),
             blurRadius: 8,
           ),
@@ -902,10 +902,10 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.7),
+        color: Colors.white.withOpacity(0.7),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: borderGold.withValues(alpha: 0.3),
+          color: borderGold.withOpacity(0.3),
           width: 1,
         ),
       ),
@@ -916,14 +916,14 @@ class _GoldPriceWidgetState extends State<GoldPriceWidget> with TickerProviderSt
             children: [
               Icon(
                 icon,
-                color: deepGold.withValues(alpha: 0.7),
+                color: deepGold.withOpacity(0.7),
                 size: 16,
               ),
               const SizedBox(width: 6),
               Text(
                 label,
                 style: TextStyle(
-                  color: deepGold.withValues(alpha: 0.8),
+                  color: deepGold.withOpacity(0.8),
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
                 ),

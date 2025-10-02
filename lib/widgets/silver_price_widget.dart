@@ -196,12 +196,12 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: lightSilverFill.withValues(alpha: 0.8),
+        color: lightSilverFill.withOpacity(0.8),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: borderSilver.withValues(alpha: 0.5), width: 1),
+        border: Border.all(color: borderSilver.withOpacity(0.5), width: 1),
         boxShadow: [
           BoxShadow(
-            color: deepSilver.withValues(alpha: 0.1),
+            color: deepSilver.withOpacity(0.1),
             offset: const Offset(0, 2),
             blurRadius: 8,
           ),
@@ -249,7 +249,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
           border: Border.all(color: const Color(0xFFE57373), width: 1),
           boxShadow: [
             BoxShadow(
-              color: Colors.red.withValues(alpha: 0.1),
+              color: Colors.red.withOpacity(0.1),
               offset: const Offset(0, 2),
               blurRadius: 8,
             ),
@@ -307,20 +307,20 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
                   colors: [
                     lightSilverFill,
                     background,
-                    lightSilverFill.withValues(alpha: 0.8),
+                    lightSilverFill.withOpacity(0.8),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: borderSilver.withValues(alpha: 0.6), width: 1.5),
+                border: Border.all(color: borderSilver.withOpacity(0.6), width: 1.5),
                 boxShadow: [
                   BoxShadow(
-                    color: deepSilver.withValues(alpha: 0.15),
+                    color: deepSilver.withOpacity(0.15),
                     offset: const Offset(0, 4),
                     blurRadius: 12,
                     spreadRadius: 1,
                   ),
                   BoxShadow(
-                    color: Colors.white.withValues(alpha: 0.7),
+                    color: Colors.white.withOpacity(0.7),
                     offset: const Offset(0, -2),
                     blurRadius: 6,
                   ),
@@ -354,7 +354,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
                 borderRadius: BorderRadius.circular(6),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFFC0C0C0).withValues(alpha: 0.3),
+                    color: const Color(0xFFC0C0C0).withOpacity(0.3),
                     offset: const Offset(0, 2),
                     blurRadius: 3,
                   ),
@@ -415,7 +415,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
               Text(
                 '/gram',
                 style: TextStyle(
-                  color: deepSilver.withValues(alpha: 0.8),
+                  color: deepSilver.withOpacity(0.8),
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
                 ),
@@ -433,10 +433,10 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                   decoration: BoxDecoration(
-                    color: _getChangeColor(_currentData!.change).withValues(alpha: 0.1),
+                    color: _getChangeColor(_currentData!.change).withOpacity(0.1),
                     borderRadius: BorderRadius.circular(4),
                     border: Border.all(
-                      color: _getChangeColor(_currentData!.change).withValues(alpha: 0.3),
+                      color: _getChangeColor(_currentData!.change).withOpacity(0.3),
                       width: 1,
                     ),
                   ),
@@ -473,7 +473,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
                     borderRadius: BorderRadius.circular(6),
                     boxShadow: [
                       BoxShadow(
-                        color: deepSilver.withValues(alpha: 0.3),
+                        color: deepSilver.withOpacity(0.3),
                         offset: const Offset(0, 2),
                         blurRadius: 3,
                       ),
@@ -509,7 +509,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
           Text(
             'Updated ${_formatLastUpdated(_currentData!.lastUpdated)}',
             style: TextStyle(
-              color: deepSilver.withValues(alpha: 0.5),
+              color: deepSilver.withOpacity(0.5),
               fontSize: 8,
               fontWeight: FontWeight.w500,
               fontStyle: FontStyle.italic,
@@ -536,7 +536,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFFC0C0C0).withValues(alpha: 0.3),
+                    color: const Color(0xFFC0C0C0).withOpacity(0.3),
                     offset: const Offset(0, 2),
                     blurRadius: 4,
                   ),
@@ -567,7 +567,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
                   Text(
                     _currentData!.country,
                     style: TextStyle(
-                      color: deepSilver.withValues(alpha: 0.7),
+                      color: deepSilver.withOpacity(0.7),
                       fontSize: 10,
                       fontWeight: FontWeight.w500,
                     ),
@@ -588,7 +588,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
             else
               Icon(
                 Icons.refresh,
-                color: deepSilver.withValues(alpha: 0.6),
+                color: deepSilver.withOpacity(0.6),
                 size: 14,
               ),
           ],
@@ -614,7 +614,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
             Text(
               '/oz',
               style: TextStyle(
-                color: deepSilver.withValues(alpha: 0.6),
+                color: deepSilver.withOpacity(0.6),
                 fontSize: 11,
                 fontWeight: FontWeight.w500,
               ),
@@ -626,10 +626,10 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
-                color: _getChangeColor(_currentData!.change).withValues(alpha: 0.1),
+                color: _getChangeColor(_currentData!.change).withOpacity(0.1),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                  color: _getChangeColor(_currentData!.change).withValues(alpha: 0.3),
+                  color: _getChangeColor(_currentData!.change).withOpacity(0.3),
                   width: 1,
                 ),
               ),
@@ -671,7 +671,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
         Text(
           'Updated ${_formatLastUpdated(_currentData!.lastUpdated)}',
           style: TextStyle(
-            color: deepSilver.withValues(alpha: 0.5),
+            color: deepSilver.withOpacity(0.5),
             fontSize: 9,
             fontWeight: FontWeight.w500,
             fontStyle: FontStyle.italic,
@@ -703,14 +703,14 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
             colors: [
               lightSilverFill,
               background,
-              lightSilverFill.withValues(alpha: 0.9),
+              lightSilverFill.withOpacity(0.9),
             ],
           ),
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: borderSilver.withValues(alpha: 0.6), width: 2),
+          border: Border.all(color: borderSilver.withOpacity(0.6), width: 2),
           boxShadow: [
             BoxShadow(
-              color: deepSilver.withValues(alpha: 0.2),
+              color: deepSilver.withOpacity(0.2),
               offset: const Offset(0, 10),
               blurRadius: 30,
               spreadRadius: 2,
@@ -728,7 +728,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [deepSilver, deepSilver.withValues(alpha: 0.8)],
+                  colors: [deepSilver, deepSilver.withOpacity(0.8)],
                 ),
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(18),
@@ -828,7 +828,7 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
                         Text(
                           'Last Updated: ${_formatLastUpdated(rates.lastUpdated)}',
                           style: TextStyle(
-                            color: deepSilver.withValues(alpha: 0.7),
+                            color: deepSilver.withOpacity(0.7),
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
@@ -851,15 +851,15 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
       width: double.infinity,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: bgColor.withValues(alpha: 0.8),
+        color: bgColor.withOpacity(0.8),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: accentColor.withValues(alpha: 0.4),
+          color: accentColor.withOpacity(0.4),
           width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
-            color: accentColor.withValues(alpha: 0.1),
+            color: accentColor.withOpacity(0.1),
             offset: const Offset(0, 4),
             blurRadius: 8,
           ),
@@ -902,10 +902,10 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.7),
+        color: Colors.white.withOpacity(0.7),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: borderSilver.withValues(alpha: 0.3),
+          color: borderSilver.withOpacity(0.3),
           width: 1,
         ),
       ),
@@ -916,14 +916,14 @@ class _SilverPriceWidgetState extends State<SilverPriceWidget> with TickerProvid
             children: [
               Icon(
                 icon,
-                color: deepSilver.withValues(alpha: 0.7),
+                color: deepSilver.withOpacity(0.7),
                 size: 16,
               ),
               const SizedBox(width: 6),
               Text(
                 label,
                 style: TextStyle(
-                  color: deepSilver.withValues(alpha: 0.8),
+                  color: deepSilver.withOpacity(0.8),
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
                 ),

@@ -46,7 +46,7 @@ class LoadingIndicator extends StatelessWidget {
 
   Widget _buildOverlay(BuildContext context) {
     return Container(
-      color: Colors.black.withValues(alpha: 0.3),
+      color: Colors.black.withOpacity(0.3),
       child: Center(
         child: Container(
           padding: const EdgeInsets.all(24),
@@ -55,7 +55,7 @@ class LoadingIndicator extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: 0.1),
+                color: Colors.black.withOpacity(0.1),
                 blurRadius: 10,
                 offset: const Offset(0, 4),
               ),
@@ -73,7 +73,7 @@ class LoadingIndicator extends StatelessWidget {
                 Text(
                   message!,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Theme.of(context).textTheme.bodyMedium?.color?.withValues(alpha: 0.7),
+                    color: Theme.of(context).textTheme.bodyMedium?.color?.withOpacity(0.7),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -102,7 +102,7 @@ class LoadingIndicator extends StatelessWidget {
           Text(
             message!,
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
-              color: color ?? Theme.of(context).textTheme.bodySmall?.color?.withValues(alpha: 0.7),
+              color: color ?? Theme.of(context).textTheme.bodySmall?.color?.withOpacity(0.7),
             ),
           ),
         ],
@@ -128,7 +128,7 @@ class LoadingIndicator extends StatelessWidget {
             Text(
               message!,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Theme.of(context).textTheme.bodyMedium?.color?.withValues(alpha: 0.7),
+                color: Theme.of(context).textTheme.bodyMedium?.color?.withOpacity(0.7),
               ),
               textAlign: TextAlign.center,
             ),

@@ -258,7 +258,7 @@ class _OverallWeeklyReportScreenState extends State<OverallWeeklyReportScreen> {
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF0B5D3B).withValues(alpha: 0.3),
+                  color: const Color(0xFF0B5D3B).withOpacity(0.3),
                   offset: const Offset(0, 4),
                   blurRadius: 12,
                 ),
@@ -317,10 +317,10 @@ class _OverallWeeklyReportScreenState extends State<OverallWeeklyReportScreen> {
               decoration: BoxDecoration(
                 color: isDarkMode ? const Color(0xFF1E1E1E) : Colors.white,
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3), width: 2),
+                border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3), width: 2),
                 boxShadow: [
                   BoxShadow(
-                    color: isDarkMode ? Colors.black.withValues(alpha: 0.3) : Colors.black.withValues(alpha: 0.05),
+                    color: isDarkMode ? Colors.black.withOpacity(0.3) : Colors.black.withOpacity(0.05),
                     offset: const Offset(0, 2),
                     blurRadius: 8,
                   ),
@@ -376,7 +376,7 @@ class _OverallWeeklyReportScreenState extends State<OverallWeeklyReportScreen> {
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            color: lightGreenFill.withValues(alpha: 0.5),
+            color: lightGreenFill.withOpacity(0.5),
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(14),
               topRight: Radius.circular(14),
@@ -1175,7 +1175,7 @@ class _OverallWeeklyReportScreenState extends State<OverallWeeklyReportScreen> {
           Icon(
             Icons.edit_outlined,
             size: 12,
-            color: color.withValues(alpha: 0.7),
+            color: color.withOpacity(0.7),
           ),
         ],
       ),
@@ -1238,7 +1238,7 @@ class _OverallWeeklyReportScreenState extends State<OverallWeeklyReportScreen> {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 12),
       decoration: BoxDecoration(
-        color: isDarkMode ? const Color(0xFF2D2D2D) : lightGreenFill.withValues(alpha: 0.3),
+        color: isDarkMode ? const Color(0xFF2D2D2D) : lightGreenFill.withOpacity(0.3),
         border: Border(
           top: BorderSide(
             color: isDarkMode ? const Color(0xFF4A7C59) : borderGreen,

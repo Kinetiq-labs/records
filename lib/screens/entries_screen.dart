@@ -271,10 +271,10 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
               width: 2470,
               height: 60,
               decoration: BoxDecoration(
-                color: isDarkMode ? const Color(0xFF2D2D2D) : const Color(0xFF0B5D3B).withValues(alpha: 0.15),
+                color: isDarkMode ? const Color(0xFF2D2D2D) : const Color(0xFF0B5D3B).withOpacity(0.15),
                 border: Border(
                   bottom: BorderSide(
-                    color: isDarkMode ? const Color(0xFF4A4A4A) : const Color(0xFF0B5D3B).withValues(alpha: 0.3),
+                    color: isDarkMode ? const Color(0xFF4A4A4A) : const Color(0xFF0B5D3B).withOpacity(0.3),
                     width: 2,
                   ),
                 ),
@@ -392,9 +392,9 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
       // Use animated highlight color for the target entry
       rowColor = Colors.transparent; // Will be overridden by AnimatedBuilder
     } else if (isSelected) {
-      rowColor = isDarkMode ? const Color(0xFF4A7C59).withValues(alpha: 0.3) : const Color(0xFF0B5D3B).withValues(alpha: 0.25);
+      rowColor = isDarkMode ? const Color(0xFF4A7C59).withOpacity(0.3) : const Color(0xFF0B5D3B).withOpacity(0.25);
     } else {
-      rowColor = isDarkMode ? const Color(0xFF1E1E1E).withValues(alpha: 0.8) : Colors.white.withValues(alpha: 0.8);
+      rowColor = isDarkMode ? const Color(0xFF1E1E1E).withOpacity(0.8) : Colors.white.withOpacity(0.8);
     }
 
     final textStyle = TextStyle(
@@ -409,7 +409,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
         color: rowColor,
         border: Border(
           bottom: BorderSide(
-            color: isDarkMode ? const Color(0xFF4A4A4A).withValues(alpha: 0.3) : const Color(0xFFE0E0E0),
+            color: isDarkMode ? const Color(0xFF4A4A4A).withOpacity(0.3) : const Color(0xFFE0E0E0),
             width: 0.5,
           ),
         ),
@@ -446,7 +446,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
     if (isHighlighted && _showHighlight) {
       containerChild = Container(
         decoration: BoxDecoration(
-          color: const Color(0xFFFFEB3B).withValues(alpha: 0.8), // Bright yellow highlight
+          color: const Color(0xFFFFEB3B).withOpacity(0.8), // Bright yellow highlight
         ),
         child: containerChild,
       );
@@ -541,7 +541,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
         color: isDarkMode ? const Color(0xFF2D2D2D) : const Color(0xFFF5F5F5),
         border: Border(
           top: BorderSide(
-            color: isDarkMode ? const Color(0xFF4A4A4A) : const Color(0xFF0B5D3B).withValues(alpha: 0.3),
+            color: isDarkMode ? const Color(0xFF4A4A4A) : const Color(0xFF0B5D3B).withOpacity(0.3),
             width: 2,
           ),
         ),
@@ -1277,12 +1277,12 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: isDarkMode
-            ? const Color(0xFF1A3325).withValues(alpha: 0.5)  // Subtle green tint for calculated fields
-            : const Color(0xFFE8F5E9).withValues(alpha: 0.5),
+            ? const Color(0xFF1A3325).withOpacity(0.5)  // Subtle green tint for calculated fields
+            : const Color(0xFFE8F5E9).withOpacity(0.5),
           border: Border.all(
             color: isDarkMode
-              ? const Color(0xFF4A7C59).withValues(alpha: 0.3)
-              : const Color(0xFF66BB6A).withValues(alpha: 0.3),
+              ? const Color(0xFF4A7C59).withOpacity(0.3)
+              : const Color(0xFF66BB6A).withOpacity(0.3),
             width: 0.5,
           ),
         ),
@@ -1333,7 +1333,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.1),
+            color: Colors.black.withOpacity(0.1),
             offset: const Offset(0, -2),
             blurRadius: 8,
           ),
@@ -1571,7 +1571,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF0B5D3B).withValues(alpha: 0.3),
+                  color: const Color(0xFF0B5D3B).withOpacity(0.3),
                   offset: const Offset(0, 4),
                   blurRadius: 12,
                 ),
@@ -1583,7 +1583,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.2),
+                    color: Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Icon(
@@ -1625,7 +1625,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.2),
+                    color: Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Text(
@@ -1643,7 +1643,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
                 // Export button
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.2),
+                    color: Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: IconButton(
@@ -1669,7 +1669,7 @@ class _EntriesScreenState extends State<EntriesScreen> with TickerProviderStateM
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
                   BoxShadow(
-                    color: isDarkMode ? Colors.black.withValues(alpha: 0.3) : Colors.black.withValues(alpha: 0.05),
+                    color: isDarkMode ? Colors.black.withOpacity(0.3) : Colors.black.withOpacity(0.05),
                     offset: const Offset(0, 2),
                     blurRadius: 8,
                   ),

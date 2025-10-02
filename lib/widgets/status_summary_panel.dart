@@ -40,10 +40,10 @@ class StatusSummaryPanel extends StatelessWidget {
       decoration: BoxDecoration(
         color: isDarkMode ? const Color(0xFF1E1E1E) : Colors.white,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.3), width: 2),
+        border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.3), width: 2),
         boxShadow: [
           BoxShadow(
-            color: deepGreen.withValues(alpha: 0.1),
+            color: deepGreen.withOpacity(0.1),
             offset: const Offset(0, 4),
             blurRadius: 12,
             spreadRadius: 2,
@@ -63,7 +63,7 @@ class StatusSummaryPanel extends StatelessWidget {
                 end: Alignment.bottomRight,
                 colors: isDarkMode
                   ? [const Color(0xFF2D2D2D), const Color(0xFF4A4A4A)]
-                  : [deepGreen, deepGreen.withValues(alpha: 0.8)],
+                  : [deepGreen, deepGreen.withOpacity(0.8)],
               ),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(14),
@@ -167,9 +167,9 @@ class StatusSummaryPanel extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: isDarkMode ? const Color(0xFF2D2D2D) : lightGreenFill.withValues(alpha: 0.3),
+        color: isDarkMode ? const Color(0xFF2D2D2D) : lightGreenFill.withOpacity(0.3),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withValues(alpha: 0.2)),
+        border: Border.all(color: (isDarkMode ? const Color(0xFF4A7C59) : borderGreen).withOpacity(0.2)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -180,7 +180,7 @@ class StatusSummaryPanel extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: accentColor.withValues(alpha: 0.1),
+                  color: accentColor.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(
@@ -283,7 +283,7 @@ class StatusSummaryPanel extends StatelessWidget {
                 color: isDarkMode ? const Color(0xFF2A2A2A) : const Color(0xFFFFF3E0),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                  color: const Color(0xFFFF9800).withValues(alpha: 0.3),
+                  color: const Color(0xFFFF9800).withOpacity(0.3),
                   width: 1,
                 ),
               ),
@@ -292,7 +292,7 @@ class StatusSummaryPanel extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFFF9800).withValues(alpha: 0.1),
+                      color: const Color(0xFFFF9800).withOpacity(0.1),
                       borderRadius: BorderRadius.circular(6),
                     ),
                     child: const Icon(
@@ -344,7 +344,7 @@ class StatusSummaryPanel extends StatelessWidget {
                 color: isDarkMode ? const Color(0xFF2A2A2A) : const Color(0xFFE8F5E9),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                  color: const Color(0xFF4CAF50).withValues(alpha: 0.3),
+                  color: const Color(0xFF4CAF50).withOpacity(0.3),
                   width: 1,
                 ),
               ),
@@ -353,7 +353,7 @@ class StatusSummaryPanel extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF4CAF50).withValues(alpha: 0.1),
+                      color: const Color(0xFF4CAF50).withOpacity(0.1),
                       borderRadius: BorderRadius.circular(6),
                     ),
                     child: const Icon(
@@ -423,10 +423,10 @@ class StatusSummaryPanel extends StatelessWidget {
           decoration: BoxDecoration(
             color: isDarkMode ? const Color(0xFF1E1E1E) : Colors.white,
             borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: color.withValues(alpha: 0.3)),
+            border: Border.all(color: color.withOpacity(0.3)),
             boxShadow: [
               BoxShadow(
-                color: color.withValues(alpha: 0.1),
+                color: color.withOpacity(0.1),
                 offset: const Offset(0, 2),
                 blurRadius: 4,
               ),
@@ -438,7 +438,7 @@ class StatusSummaryPanel extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(6),
                 decoration: BoxDecoration(
-                  color: color.withValues(alpha: 0.1),
+                  color: color.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Icon(

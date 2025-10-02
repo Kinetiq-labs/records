@@ -220,14 +220,14 @@ class _CustomerSearchResultsScreenState extends State<CustomerSearchResultsScree
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: isDarkMode
-                  ? Colors.white.withValues(alpha: 0.1)
-                  : Colors.grey.withValues(alpha: 0.3),
+                  ? Colors.white.withOpacity(0.1)
+                  : Colors.grey.withOpacity(0.3),
               ),
               boxShadow: isDarkMode
                   ? null
                   : [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.05),
+                        color: Colors.black.withOpacity(0.05),
                         offset: const Offset(0, 2),
                         blurRadius: 4,
                       ),
@@ -300,14 +300,14 @@ class _CustomerSearchResultsScreenState extends State<CustomerSearchResultsScree
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDarkMode
-            ? Colors.white.withValues(alpha: 0.1)
-            : Colors.grey.withValues(alpha: 0.3),
+            ? Colors.white.withOpacity(0.1)
+            : Colors.grey.withOpacity(0.3),
         ),
         boxShadow: isDarkMode
             ? null
             : [
                 BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.05),
+                  color: Colors.black.withOpacity(0.05),
                   offset: const Offset(0, 2),
                   blurRadius: 4,
                 ),
@@ -320,7 +320,7 @@ class _CustomerSearchResultsScreenState extends State<CustomerSearchResultsScree
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: isDarkMode ? const Color(0xFF0B5D3B) : const Color(0xFF0B5D3B).withValues(alpha: 0.1),
+              color: isDarkMode ? const Color(0xFF0B5D3B) : const Color(0xFF0B5D3B).withOpacity(0.1),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(12),
                 topRight: Radius.circular(12),
@@ -357,7 +357,7 @@ class _CustomerSearchResultsScreenState extends State<CustomerSearchResultsScree
                         style: BilingualTextStyles.getTextStyle(
                           text: '${entries.length} ${Translations.get('entries', currentLang)}',
                           fontSize: 14,
-                          color: isDarkMode ? Colors.white70 : const Color(0xFF0B5D3B).withValues(alpha: 0.8),
+                          color: isDarkMode ? Colors.white70 : const Color(0xFF0B5D3B).withOpacity(0.8),
                         ),
                       ),
                     ],

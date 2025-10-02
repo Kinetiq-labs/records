@@ -355,7 +355,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: 0.1),
+                color: Colors.black.withOpacity(0.1),
                 offset: const Offset(0, 2),
                 blurRadius: 8,
               ),
@@ -490,7 +490,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: 0.1),
+                color: Colors.black.withOpacity(0.1),
                 offset: const Offset(0, 2),
                 blurRadius: 8,
               ),
@@ -567,7 +567,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: 0.1),
+                color: Colors.black.withOpacity(0.1),
                 offset: const Offset(0, 2),
                 blurRadius: 8,
               ),
@@ -724,7 +724,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.1),
+            color: Colors.black.withOpacity(0.1),
             offset: const Offset(0, 2),
             blurRadius: 8,
           ),
@@ -887,7 +887,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFFFD700).withValues(alpha: 0.2),
+                  color: const Color(0xFFFFD700).withOpacity(0.2),
                   borderRadius: BorderRadius.circular(4),
                 ),
                 child: Text(
@@ -907,7 +907,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF9C27B0).withValues(alpha: 0.2),
+                  color: const Color(0xFF9C27B0).withOpacity(0.2),
                   borderRadius: BorderRadius.circular(4),
                 ),
                 child: Column(
@@ -941,7 +941,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF00BCD4).withValues(alpha: 0.2),
+                  color: const Color(0xFF00BCD4).withOpacity(0.2),
                   borderRadius: BorderRadius.circular(4),
                 ),
                 child: Column(
@@ -974,7 +974,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
-                color: statusColor.withValues(alpha: 0.2),
+                color: statusColor.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Row(
@@ -1126,7 +1126,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.1),
+            color: Colors.black.withOpacity(0.1),
             offset: const Offset(0, 2),
             blurRadius: 8,
           ),
@@ -2379,7 +2379,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF0B5D3B).withValues(alpha: 0.3),
+                  color: const Color(0xFF0B5D3B).withOpacity(0.3),
                   offset: const Offset(0, 4),
                   blurRadius: 12,
                 ),
@@ -2389,7 +2389,7 @@ class _CustomerDataScreenState extends State<CustomerDataScreen> with TickerProv
               children: [
                 CircleAvatar(
                   radius: 30,
-                  backgroundColor: Colors.white.withValues(alpha: 0.2),
+                  backgroundColor: Colors.white.withOpacity(0.2),
                   child: Text(
                     widget.customer.name.isNotEmpty ? widget.customer.name[0].toUpperCase() : 'C',
                     style: const TextStyle(

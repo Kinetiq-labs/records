@@ -333,10 +333,10 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
               width: 2200,
               height: 60,
               decoration: BoxDecoration(
-                color: isDarkMode ? const Color(0xFF2D2D2D) : const Color(0xFF0B5D3B).withValues(alpha: 0.15),
+                color: isDarkMode ? const Color(0xFF2D2D2D) : const Color(0xFF0B5D3B).withOpacity(0.15),
                 border: Border(
                   bottom: BorderSide(
-                    color: isDarkMode ? const Color(0xFF4A4A4A) : const Color(0xFF0B5D3B).withValues(alpha: 0.3),
+                    color: isDarkMode ? const Color(0xFF4A4A4A) : const Color(0xFF0B5D3B).withOpacity(0.3),
                     width: 2,
                   ),
                 ),
@@ -444,8 +444,8 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
   Widget _buildDataRow(KhataEntry entry, String currentLang, bool isDarkMode) {
     final isSelected = _selectedEntries.contains(entry.entryId);
     final rowColor = isSelected
-        ? (isDarkMode ? const Color(0xFF4A7C59).withValues(alpha: 0.3) : const Color(0xFF0B5D3B).withValues(alpha: 0.25))
-        : (isDarkMode ? const Color(0xFF1E1E1E).withValues(alpha: 0.8) : Colors.white.withValues(alpha: 0.8));
+        ? (isDarkMode ? const Color(0xFF4A7C59).withOpacity(0.3) : const Color(0xFF0B5D3B).withOpacity(0.25))
+        : (isDarkMode ? const Color(0xFF1E1E1E).withOpacity(0.8) : Colors.white.withOpacity(0.8));
 
     final textStyle = TextStyle(
       fontSize: 14,
@@ -462,7 +462,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
           color: rowColor,
           border: Border(
             bottom: BorderSide(
-              color: isDarkMode ? const Color(0xFF4A4A4A).withValues(alpha: 0.3) : const Color(0xFFE0E0E0),
+              color: isDarkMode ? const Color(0xFF4A4A4A).withOpacity(0.3) : const Color(0xFFE0E0E0),
               width: 0.5,
             ),
           ),
@@ -568,7 +568,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: BoxDecoration(
-          color: _getStatusColor(entry.status ?? '').withValues(alpha: 0.1),
+          color: _getStatusColor(entry.status ?? '').withOpacity(0.1),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: _getStatusColor(entry.status ?? ''),
@@ -606,7 +606,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
         color: isDarkMode ? const Color(0xFF2D2D2D) : const Color(0xFFF5F5F5),
         border: Border(
           top: BorderSide(
-            color: isDarkMode ? const Color(0xFF4A4A4A) : const Color(0xFF0B5D3B).withValues(alpha: 0.3),
+            color: isDarkMode ? const Color(0xFF4A4A4A) : const Color(0xFF0B5D3B).withOpacity(0.3),
             width: 2,
           ),
         ),
@@ -740,7 +740,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.1),
+            color: Colors.black.withOpacity(0.1),
             offset: const Offset(0, -2),
             blurRadius: 8,
           ),
@@ -832,7 +832,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: statusColor.withValues(alpha: 0.2),
+                color: statusColor.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Icon(
@@ -869,14 +869,14 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
               gradient: LinearGradient(
                 colors: isDarkMode
                   ? [const Color(0xFF2D2D2D), const Color(0xFF4A4A4A)]
-                  : [statusColor, statusColor.withValues(alpha: 0.8)],
+                  : [statusColor, statusColor.withOpacity(0.8)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
-                  color: statusColor.withValues(alpha: 0.3),
+                  color: statusColor.withOpacity(0.3),
                   offset: const Offset(0, 4),
                   blurRadius: 12,
                 ),
@@ -900,7 +900,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.2),
+                    color: Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Text(
@@ -952,7 +952,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.2),
+                    color: Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Icon(
@@ -985,7 +985,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
                   BoxShadow(
-                    color: isDarkMode ? Colors.black.withValues(alpha: 0.3) : Colors.black.withValues(alpha: 0.05),
+                    color: isDarkMode ? Colors.black.withOpacity(0.3) : Colors.black.withOpacity(0.05),
                     offset: const Offset(0, 2),
                     blurRadius: 8,
                   ),
@@ -1005,7 +1005,7 @@ class _StatusEntriesScreenState extends State<StatusEntriesScreen> with TickerPr
                               Icon(
                                 _getStatusIcon(widget.status),
                                 size: 64,
-                                color: statusColor.withValues(alpha: 0.5),
+                                color: statusColor.withOpacity(0.5),
                               ),
                               const SizedBox(height: 16),
                               Text(
