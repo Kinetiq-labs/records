@@ -29,6 +29,20 @@ jobs:
       - name: Build Windows Release
         run: flutter build windows --release
 
+      - name: List Build Output
+        run: |
+          Write-Host "Checking build output structure..."
+          if (Test-Path "build/windows/x64/runner/Release") {
+            Write-Host "Build path: build/windows/x64/runner/Release"
+            Get-ChildItem "build/windows/x64/runner/Release" | Format-Table Name, Length
+          } elseif (Test-Path "build/windows/runner/Release") {
+            Write-Host "Build path: build/windows/runner/Release"
+            Get-ChildItem "build/windows/runner/Release" | Format-Table Name, Length
+          } else {
+            Write-Host "ERROR: Release folder not found!"
+            exit 1
+          }
+
       - name: Create Windows ZIP
         run: |
           if (Test-Path "build/windows/x64/runner/Release") {
